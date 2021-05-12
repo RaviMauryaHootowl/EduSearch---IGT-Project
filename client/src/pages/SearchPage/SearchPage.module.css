@@ -1,0 +1,148 @@
+.searchFullPageContainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBarContainer{
+  width: 100%;
+  background-color: darkcyan;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoTopBar{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding-right: 16px;
+  cursor: pointer;
+}
+
+.searchBarContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.searchBar{
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.178) 1px 1px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchBarInput{
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 400px;
+}
+
+.searchBtn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.bottomPageContainer{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.leftPaneSettings{
+  width: 25%;
+  background-color: #efefef;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterHeading{
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.filterList{
+  display: flex;
+  flex-direction: column;
+}
+
+.filterBlock{
+  margin-bottom: 5px;
+}
+
+.locationDrop{
+  margin-left: 6px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 0.5px rgba(0, 0, 0, 0.205) solid;
+}
+
+.searchListOuterContainer{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.searchListHeader{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.searchListOuterContainer{
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: scroll; */
+}
+
+.searchListGridContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+
+.searchResultCardContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.instInfoContainer{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.instImage{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.instName{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.instLocation{
+  color: rgb(80, 80, 80);
+}

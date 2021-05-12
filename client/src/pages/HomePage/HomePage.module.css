@@ -1,0 +1,151 @@
+.fullPageContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topSectionContainer{
+  height: 400px;
+  width: 100%;
+  background-image: url("../../images/topbg.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigLogoContainer{
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 16px;
+}
+
+.searchBarContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar{
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.178) 1px 1px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchBarInput{
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 400px;
+}
+
+.searchBtn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.viewgisBtn{
+  padding: 8px 12px;
+  margin-top: 12px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  background-image: linear-gradient(to bottom, #1acc6a, #0bb155);
+  cursor: pointer;
+  color: white;
+}
+
+         
+
+
+
+
+.bottomSectionContainer{
+  width: 100%;
+  padding: 80px 10px;
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collegeArtImg{
+  width: 40%;
+  margin-bottom: 16px;
+}
+
+.infoTitle{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.infoSubTitle{
+  text-align: center;
+}
+
+
+.footer{
+  width: 100%;
+  background: #0b4db1;
+  padding: 16px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creditsContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.creditsTitle{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.creditsNames{
+  color: white;
+  padding-left: 16px;
+
+}
+
+.footerLogoContainer{
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .collegeArtImg{
+    width: 80%;
+  }
+  .footer{
+    padding: 16px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .creditsNames{
+    font-size: 14px;
+  }
+}

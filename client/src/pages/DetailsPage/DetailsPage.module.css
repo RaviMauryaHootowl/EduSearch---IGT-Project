@@ -1,0 +1,121 @@
+.detailsPageContainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topBarContainer{
+  width: 100%;
+  background-color: #008b8b;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoTopBar{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding-right: 16px;
+  cursor: pointer;
+}
+
+.searchBarContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.searchBar{
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.178) 1px 1px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchBarInput{
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 400px;
+}
+
+.searchBtn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.bottomPageContainer{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.imageSectionContainer{
+  width: 50%;
+  padding: 20px;
+}
+
+.instImage{
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.774) 1px 1px 10px;
+  border-radius: 4px;
+}
+
+.infoSectionContainer{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.instNameInfo{
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+  margin-bottom: 12px;
+}
+
+.infoIcon{
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+}
+
+.infoValue{
+  flex: 1;
+  font-size: 20px;
+}
+
+.instTwoBlockContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+
+.mapFrame{
+  width: 90%;
+  height: 900px;
+}
+
+@media only screen and (max-width: 800px){
+  .bottomPageContainer{
+    flex-direction: column;
+  }
+  .imageSectionContainer{
+    width: 100%;
+  }
+}
