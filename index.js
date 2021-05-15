@@ -18,6 +18,14 @@ mongoose.connect(dbLink, {
   console.log("DB connected!");
 });
 
+if(process.env.NODE_ENV=== 'production'){
+  app.use(express.static('client/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
+
 app.get("/api/search", async (req, res) => {
   let {q, loc, board, category} = req.query;
   if(loc === undefined){ loc = ""}
