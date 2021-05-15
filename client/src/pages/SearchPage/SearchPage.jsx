@@ -101,7 +101,7 @@ const SearchPage = () => {
   }, [locationValue, boardValue, categoryValue])
 
   const fetchData = (searchQuery) => {
-    axios.get(`/api/search`, {
+    axios.get(`https://edu-search-igt.herokuapp.com/api/search`, {
       params: {
         q: searchQuery,
         loc : locationValue,
