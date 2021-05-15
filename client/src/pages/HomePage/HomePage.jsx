@@ -44,6 +44,7 @@ const HomePage = () => {
         </div>
         <div className={styles.footerLogoContainer}>EduSearch</div>
       </div>
+      {/* <div class="mapouter"><div class="gmap_canvas"><iframe width="760" height="319" id="gmap_canvas" src="https://maps.google.com/maps?q=iit%20bombay&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a><br/><a href="https://www.embedgooglemap.net">insert google map into wordpress</a></div></div> */}
     </div>
   );
 }
