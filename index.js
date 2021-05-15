@@ -1,6 +1,7 @@
 // const instModel = require('./models/InstModel');
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
 // import mongoose from 'mongoose';
 const Inst = require('./models/InstModel');
 require('dotenv').config();
