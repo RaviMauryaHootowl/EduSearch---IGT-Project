@@ -50,13 +50,19 @@ const DetailsPage = () => {
   }
 
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      onSearchClick();
+    }
+  }
+
   return (
     <div className={styles.detailsPageContainer}>
       <div className={styles.topBarContainer}>
         <span className={styles.logoTopBar} onClick={goHome}>EduSearch</span>
         <div className={styles.searchBarContainer}>
           <div className={styles.searchBar}>
-            <input value={searchQ} onChange={(e) => setSearchQ(e.target.value)} type="text" className={styles.searchBarInput} placeholder={`Search for schools, colleges, etc`}/>
+            <input value={searchQ} onChange={(e) => setSearchQ(e.target.value)} onKeyDown={handleKeyDown} type="text" className={styles.searchBarInput} placeholder={`Search for schools, colleges, etc`}/>
             <button onClick={onSearchClick} className={styles.searchBtn}><FcSearch size={25} /></button>
           </div>
         </div>

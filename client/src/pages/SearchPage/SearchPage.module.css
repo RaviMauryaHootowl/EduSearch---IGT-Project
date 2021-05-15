@@ -30,6 +30,8 @@
 }
 
 .searchBar{
+  width: 100%;
+  max-width: 400px;
   background-color: white;
   padding: 8px 10px;
   border-radius: 5px;
@@ -43,7 +45,8 @@
   border: none;
   outline: none;
   font-size: 20px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .searchBtn{
@@ -63,6 +66,7 @@
 
 .leftPaneSettings{
   width: 25%;
+  min-width: 250px;
   background-color: #efefef;
   padding: 16px;
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px;
@@ -145,4 +149,10 @@
 
 .instLocation{
   color: rgb(80, 80, 80);
+}
+
+@media only screen and (max-width: 700px){
+  .searchListGridContainer{
+    grid-template-columns: 1fr;
+  }
 }
