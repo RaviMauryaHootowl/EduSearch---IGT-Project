@@ -40,6 +40,10 @@ const HomePage = () => {
         <span className={styles.infoTitle}>Search of Colleges, Schools and Coaching easily</span>
         <span className={styles.infoSubTitle}>Our Web App let's you easily search all types of Institutions with filters on Location, types, etc.</span>
       </div>
+      <iframe title={"Nearby Map"} 
+        className={styles.interactMap} 
+        src="https://learngis2.maps.arcgis.com/apps/instant/nearby/index.html?appid=90bceaf04c044ad2ae7b6adf1331c9b8" 
+        frameborder="0" allowfullscreen>iFrames are not supported on this page.</iframe>
       <div className={styles.footer}>
         <div className={styles.creditsContainer}>
           <span className={styles.creditsTitle}>Project by:</span>
@@ -50,7 +54,6 @@ const HomePage = () => {
         </div>
         <div className={styles.footerLogoContainer}>EduSearch</div>
       </div>
-      {/* <div class="mapouter"><div class="gmap_canvas"><iframe width="760" height="319" id="gmap_canvas" src="https://maps.google.com/maps?q=iit%20bombay&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a><br/><a href="https://www.embedgooglemap.net">insert google map into wordpress</a></div></div> */}
     </div>
   );
 }

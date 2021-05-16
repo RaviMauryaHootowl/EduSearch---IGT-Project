@@ -101,6 +101,11 @@
 }
 
 
+.interactMap{
+  width: 100%;
+  height: 90vh;
+}
+
 .footer{
   width: 100%;
   background: #0b4db1;
