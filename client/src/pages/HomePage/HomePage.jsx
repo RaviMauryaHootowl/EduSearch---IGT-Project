@@ -17,6 +17,12 @@ const HomePage = () => {
     );
   }
 
+  const onRecommendClick = () => {
+    history.push({
+      pathname: "/recommend"
+    });
+  }
+ 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
       onSearchClick();
@@ -33,24 +39,23 @@ const HomePage = () => {
             <button onClick={onSearchClick} className={styles.searchBtn}><FcSearch size={25} /></button>
           </div>
         </div>
-        <a href="https://arcg.is/1nPmP5" target="_blank" rel="noreferrer"><button className={styles.viewgisBtn}>View GIS Map</button></a>
+        <button onClick={onRecommendClick} className={styles.viewgisBtn}>Recommend Me</button>
       </div>
       <div className={styles.bottomSectionContainer}>
         <img className={styles.collegeArtImg} src={collegeart} alt="" />
         <span className={styles.infoTitle}>Search of Colleges, Schools and Coaching easily</span>
         <span className={styles.infoSubTitle}>Our Web App let's you easily search all types of Institutions with filters on Location, types, etc.</span>
       </div>
-      <iframe title={"Nearby Map"} 
+      {/* <iframe title={"Nearby Map"} 
         className={styles.interactMap} 
         src="https://learngis2.maps.arcgis.com/apps/instant/nearby/index.html?appid=90bceaf04c044ad2ae7b6adf1331c9b8" 
-        frameborder="0" allowfullscreen>iFrames are not supported on this page.</iframe>
+        frameborder="0" allowfullscreen>iFrames are not supported on this page.</iframe> */}
       <div className={styles.footer}>
         <div className={styles.creditsContainer}>
           <span className={styles.creditsTitle}>Project by:</span>
           <span className={styles.creditsNames}>Ravi Maurya</span>
           <span className={styles.creditsNames}>Soumil Kamat</span>
           <span className={styles.creditsNames}>Siddhant Gupta</span>
-          <span className={styles.creditsNames}>Prashant Gupta</span>
         </div>
         <div className={styles.footerLogoContainer}>EduSearch</div>
       </div>
